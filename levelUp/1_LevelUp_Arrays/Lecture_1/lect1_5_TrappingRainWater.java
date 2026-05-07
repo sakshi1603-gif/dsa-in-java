@@ -15,7 +15,7 @@
 // 0 <= height[i] <= 105
 
 import java.util.*;
-public class Arrays1_TrappingRainWater_5 {
+public class lect1_5_TrappingRainWater {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();

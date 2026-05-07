@@ -22,7 +22,7 @@ import java.util.*;
 // 1 <= nums.length <= 104
 // -1000 <= nums[i] <= 1000
 
-class Arrays1_Equilibrium_Index_3 {
+class lect1_3_Equilibrium_Index {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

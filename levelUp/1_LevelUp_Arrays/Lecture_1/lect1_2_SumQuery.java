@@ -16,7 +16,7 @@ Approach:
 - Prefix sum allows answering each query in O(1) time
 */
 
-public class SumQuery_2 {
+public class lect1_2_SumQuery {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 

@@ -20,7 +20,7 @@
 
 
 import java.util.*;
-public class Arrays_1_Product_of_Array_Except_self_4 {
+public class lect1_4_Product_of_Array_Except_self {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner (System.in);
 		int n = scn.nextInt();

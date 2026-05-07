@@ -3,7 +3,7 @@ import java.util.*;
 
 //when the range has given
 
-public class lect1_Count_Odd_Numbers_HW{
+public class lect1_6_Count_Odd_Numbers_HW{
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int low = scn.nextInt();

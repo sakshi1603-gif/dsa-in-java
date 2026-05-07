@@ -13,3 +13,22 @@
 // Constraints:
 // 1 <= N <= 20
 // 1 <= arr[i] <= 10^9
+import java.util.*;
+public class lect2_1_Print_Subarray {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner (System.in);
+		int n = scn.nextInt();
+		int[] arr = new int[n];
+		for(int i =0;i<n;i++){
+			arr[i]= scn.nextInt();
+		}
+		int sp = scn.nextInt();
+		int ep = scn.nextInt();
+		Subarray(n , arr , sp , ep );
+	}
+	public static void Subarray(int n ,int [] arr , int sp ,int ep ){
+		for(int i =sp;i<ep+1;i++){
+			System.out.print(arr[i]+" ");
+		}
+	}
+}

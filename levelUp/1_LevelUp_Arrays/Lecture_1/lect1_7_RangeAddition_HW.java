@@ -17,7 +17,7 @@ import java.util.*;
 // Return the final modified array after all updates are applied.
 
 
-public class lect1_RangeAddition_HW {
+public class lect1_7_RangeAddition_HW {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
