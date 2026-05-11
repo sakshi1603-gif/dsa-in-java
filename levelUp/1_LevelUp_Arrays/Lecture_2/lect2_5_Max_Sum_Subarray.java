@@ -39,9 +39,7 @@ public class lect2_5_Max_Sum_Subarray {
 			}else{
 				sum = arr[i];
 			}
-			if(ans < sum ){
-				ans = sum;
-			}
+			ans =  Math.max(ans , sum);
 		}
 		return ans ; 
 	}
