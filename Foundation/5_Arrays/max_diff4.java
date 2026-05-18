@@ -1,3 +1,4 @@
+//question no 12
 // Given n length array "arr". Find (i,j) with maximum value of (abs(arr[i] - arr[j]) + i - j). 
 //You need to print max value of (abs(arr[i] - arr[j]) + i - j) possible and not the (i,j) itself.
 

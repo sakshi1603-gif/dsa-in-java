@@ -1,3 +1,20 @@
+//question no 3 
+// Arrays2_Reverse Array
+// Success rate: 31.08%
+// Given n length Array, You have to Reverse the entire array and print it.
+
+// Input Format:
+// Each of the test cases have 2 lines.
+// The First line contains the size of the array n.
+// The second line contains the n elements of the array.
+
+// Output Format:
+// Print all the array element in a line separated by space after reversing it
+
+// Constraints:
+// 2 <= array length <= 10^5
+// -10^4 <= array[i] <= 10^4
+
 import java.util.Scanner;
 public class Reverse_array {
 	public static void main(String[] args) {

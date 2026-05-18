@@ -1,3 +1,21 @@
+//Question no 2 
+// Arrays1_Swap Indexes
+// Success rate: 24.07%
+// Given n length Array and 2 indexes, You have to swap the elements of 2 indexes and print the array.
+
+// Input Format:
+// Each of the test cases have 3 lines.
+// The First line contains the size of the array n.
+// The second line contains the n elements of the array.
+// The third line contains two index.
+
+// Output Format:
+// Print all the array element in a line separated by space after swapping
+
+// Constraints:
+// 2 <= array length <= 10^5
+// -10^4 <= array[i] <= 10^4
+// 0 <= indexs < array length
 //Given n length Array and 2 indexes, 
 //You have to swap the elements of 2 indexes and print the array.
 import java.util.Scanner;

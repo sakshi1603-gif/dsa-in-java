@@ -1,3 +1,20 @@
+//question no 5 
+// Arrays2_Rotate Array
+// Success rate: 32.86%
+// Given an integer array nums of size N, rotate the array to the right by k steps, where k is non-negative.
+
+// Input Format:
+// The first line contains an integer n denoting size of the array.
+// Next line contains the elements of array.
+// Next line contains the integer k.
+
+// Output Format:
+// Output the updated array.
+
+// Constraints:
+// 1<=N<=10^6
+// 1<=k<=10^6
+// -10^5<=arr[i]<=10^5
 import java.util.*;
 public class Rotate_Array{
 
