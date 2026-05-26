@@ -18,3 +18,30 @@
 // 1 <= n <= 10
 // 0 <= arr[i] < n
 // All the elements of arr are unique.
+public class lect5_1_Max_Chunks_to_make_sorted_1 {
+
+    public static int maxChunksToSorted(int[] arr) {
+
+        int chunk = 0;
+        int maxTillNow = Integer.MIN_VALUE;
+        int n = arr.length;
+
+        for(int i = 0; i < n; i++) {
+
+            maxTillNow = Math.max(maxTillNow, arr[i]);
+
+            if(maxTillNow == i) {
+                chunk++;
+            }
+        }
+
+        return chunk;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {1,0,2,3,4};
+
+        System.out.println(maxChunksToSorted(arr));
+    }
+}
