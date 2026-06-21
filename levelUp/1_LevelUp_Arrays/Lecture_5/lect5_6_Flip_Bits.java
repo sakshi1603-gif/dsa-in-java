@@ -14,3 +14,48 @@
 // Constraints:
 // 1 ≤ N ≤ 10^6
 // 0 ≤ A[i] ≤ 1
+import java.util.*;
+
+public class lect5_6_Flip_Bits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println(Flip_Bits(arr , n ));
+    }
+	public static int Flip_Bits(int [] arr , int n ){
+		int count = 0;
+		for(int i=0;i<n;i++){
+			if(arr[i]==0){
+				arr[i]=1;
+			}else{
+				arr[i]=-1;
+				count++;
+
+			}
+		}
+		int sum = 0;
+		int max = Integer.MIN_VALUE;
+
+		for(int i=0;i<n;i++){
+			if(sum>=0){
+				sum=sum+arr[i];
+			}else{
+				sum=arr[i];
+			}
+			max=Math.max(max , sum);
+		}
+		if(max>0){
+			return max+count;
+		}else{
+			return count;
+		}
+	}
+}
