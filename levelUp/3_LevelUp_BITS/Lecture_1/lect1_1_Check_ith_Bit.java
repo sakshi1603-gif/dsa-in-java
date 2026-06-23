@@ -13,3 +13,13 @@
 // Constraints:
 // 1 ≤ n ≤ 10^9
 // 0 ≤ k ≤ 31
+import java.util.*;
+public class lect1_1_Check_ith_Bit {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int k = scn.nextInt();
+		boolean ans = (n & (1 << k)) != 0;
+		System.out.println(ans);
+	}
+}

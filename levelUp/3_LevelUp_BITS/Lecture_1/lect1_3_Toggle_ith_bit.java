@@ -11,3 +11,13 @@
 // Constraints:
 // 1 <= 10^5 <= n
 // 0 <= k <=31
+import java.util.*;
+public class lect1_3_Toggle_ith_bit {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int k = scn.nextInt();
+		int ans = n ^ (1 << k);
+		System.out.println(ans);
+	}
+}

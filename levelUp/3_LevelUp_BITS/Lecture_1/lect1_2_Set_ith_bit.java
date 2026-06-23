@@ -13,3 +13,13 @@
 // Constraints:
 // 1 <= N <= 10^9
 // 0 <= K < X, where X is the number of bits in the binary representation of N.
+import java.util.*;
+public class lect1_2_Set_ith_bit {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int k = scn.nextInt();
+		int ans = n | (1 << k);
+		System.out.println(ans);
+	}
+}
