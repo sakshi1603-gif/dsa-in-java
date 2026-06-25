@@ -16,7 +16,7 @@
 // Each integer in nums will appear twice, only two integers will appear once.
 import java.util.*;
 
-public class lect1_10_SingleNumber3 {
+public class lect2_1_SingleNumber3 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
 
