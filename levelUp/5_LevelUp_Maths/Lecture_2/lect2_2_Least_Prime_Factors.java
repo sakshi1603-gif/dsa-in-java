@@ -36,9 +36,7 @@ public class lect2_2_Least_Prime_Factors {
 		for(int i = 2;i*i<=n;i++){
 			if(spf[i]==i){
 				for(int j = i*i;j<=n;j=j+i){
-					if(spf[j]>i){
-						spf[j]=i;
-					}
+						spf[j]=Math.min(spf[j],i);
 				}
 			}
 		}
