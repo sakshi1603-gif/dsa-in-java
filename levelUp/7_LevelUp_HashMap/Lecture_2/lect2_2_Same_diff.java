@@ -15,7 +15,7 @@
 // The sum of n over all test cases does not exceed 2 × 10^5.
 import java.util.*;
 
-public class lect2_3_Same_diff {
+public class lect2_2_Same_diff {
 
     public static long SameDifferences(int[] nums) {
 
