@@ -20,23 +20,41 @@ import java.util.*;
 
 public class lect2_1_SubarraySum  {
 
+
     public static int subarraySum(int[] nums, int k) {
+        int[] pf = PrefixSum(nums);
+
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
 
-        int prefixSum = 0;
-        int count = 0;
+        int ans = 0;
 
-        for (int num : nums) {
-            prefixSum += num;
+        for (int ep = 0; ep < pf.length; ep++) {
 
-            count += map.getOrDefault(prefixSum - k, 0);
+            int need = pf[ep] - k;
 
-            map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
+            if (map.containsKey(need)) {
+                ans += map.get(need);
+            }
+
+            map.put(pf[ep], map.getOrDefault(pf[ep], 0) + 1);
         }
 
-        return count;
+        return ans;
     }
+
+    public static int[] PrefixSum(int[] nums) {
+        int[] pf = new int[nums.length];
+
+        pf[0] = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            pf[i] = pf[i - 1] + nums[i];
+        }
+
+        return pf;
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
