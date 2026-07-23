@@ -26,18 +26,18 @@ public class lect1_2_NSEonRight {
             arr[i] = scn.nextInt();
         }
 
-        int[] nextGreaterIndex = nextGreaterOnRight(arr);
+        int[] nextSmallerIndex = nextSmallerOnRight(arr);
 
         for (int i = 0; i < n; i++) {
-            if (nextGreaterIndex[i] == -1) {
+            if (nextSmallerIndex[i] == -1) {
                 System.out.print(-1 + " ");
             } else {
-                System.out.print(arr[nextGreaterIndex[i]] + " ");
+                System.out.print(arr[nextSmallerIndex[i]] + " ");
             }
         }
     }
 
-    public static int[] nextGreaterOnRight(int[] arr) {
+    public static int[] nextSmallerOnRight(int[] arr) {
 
         int n = arr.length;
         int[] ans = new int[n];
