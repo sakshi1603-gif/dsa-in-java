@@ -23,3 +23,41 @@
 // 1 ≤ x, y ≤ 10^9 (Values of keys and values)
 // The queries will be valid, and operations will be performed on integers only.
 // All keys will be unique in the TreeMap.
+import java.util.*;
+
+public class lect1_2_TreeMap_Basics {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int q = sc.nextInt();
+
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+
+        while (q-- > 0) {
+            char type = sc.next().charAt(0);
+
+            if (type == 'a') {
+                int x = sc.nextInt();
+                int y = sc.nextInt();
+                map.put(x, y);
+            }
+            else if (type == 'b') {
+                int x = sc.nextInt();
+                System.out.println(map.getOrDefault(x, -1));
+            }
+            else if (type == 'c') {
+                System.out.println(map.size());
+            }
+            else if (type == 'd') {
+                int x = sc.nextInt();
+                map.remove(x);
+            }
+            else if (type == 'e') {
+                for (int key : map.keySet()) {
+                    System.out.print(key + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
